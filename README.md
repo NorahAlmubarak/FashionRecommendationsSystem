@@ -53,6 +53,13 @@ The **Jupyter Notebook** in this repository includes the following steps:
 ## **Goal**
 We trained **supervised learning models** to **classify and recommend fashion products**.
 
+## Algorithm Selection Justification
+In developing our fashion recommendation system, which processes images to predict subcategories and recommend similar items, we have selected two supervised machine learning algorithms: Support Vector Machine (SVM) Classifier and Multi-layer Perceptron (MLP) Neural Network.
+- *Support Vector Machine (SVM) Classifier*
+SVM is chosen for its effectiveness in image classification, particularly with high-dimensional data. It finds an optimal hyperplane to separate different classes, making it well-suited for distinguishing fashion subcategories based on image features. Its robustness against overfitting is also valuable for handling diverse fashion datasets [1].
+- *Multi-layer Perceptron (MLP) Neural Network*
+MLP is selected due to its ability to model complex non-linear relationships, which is essential for image-based classification. Its flexibility allows it to learn intricate patterns within image data, enabling accurate subcategory predictions. This makes it a strong candidate for improving recommendation accuracy in our system[2].
+
 ## **Steps in Supervised Learning**
 
 1. **Feature Extraction with ResNet50**
@@ -108,3 +115,8 @@ We trained **supervised learning models** to **classify and recommend fashion pr
    - **Comparison:**
      
      SVM outperformed MLP in accuracy.
+
+
+## References
+- (1). D. D. A. M. S. Easy, “Understanding SVMs’: For Image Classification,” Medium, Aug. 10, 2018. https://medium.com/@dataturks/understanding-svms-for-image-classification-cf4f01232700
+- (2). S. Biswas, "An Algorithm for Training Multilayer Perceptron (MLP) for Image Reconstruction Using Neural Network Without Overfitting," ResearchGate, Nov. 2016. [Online].https://www.researchgate.net/publication/310327188_An_Algorithm_For_Training_Multilayer_Perceptron_MLP_For_Image_Reconstruction_Using_Neural_Network_Without_Overfitting.
