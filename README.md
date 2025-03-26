@@ -153,6 +153,18 @@ To group fashion products based on visual similarity **without using labeled dat
    - Recommendations were based on proximity in PCA-reduced feature space.
    - Achieved visually coherent and relevant suggestions without relying on predefined labels.
 
+## Generative AI – LLaMA API Integration
+
+In this phase, Generative AI was integrated using the LLaMA model through the Together API. The objective was to enhance the recommendation system by generating descriptive explanations based on the input image.
+
+The system predicts the cluster of the input image, finds the most visually similar items within that cluster, and then uses Generative AI to explain the recommendations.
+
+Two different prompt templates were applied:
+- A **formal, informative template** that explains item similarities in a structured way
+- A **conversational stylist template** that presents the explanation in a friendly, user-oriented tone
+
+Both outputs are displayed side by side, and a justification is provided for which template better fits the system's purpose.
+
 
 ## References
 - (1). D. D. A. M. S. Easy, “Understanding SVMs’: For Image Classification,” Medium, Aug. 10, 2018. https://medium.com/@dataturks/understanding-svms-for-image-classification-cf4f01232700
