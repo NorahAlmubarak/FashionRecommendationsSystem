@@ -115,6 +115,43 @@ MLP is selected due to its ability to model complex non-linear relationships, wh
    - **Comparison:**
      
      SVM outperformed MLP in accuracy.
+# **Unsupervised Learning: Fashion Product Classification & Recommendations**
+
+## **Goal**
+To group fashion products based on visual similarity **without using labeled data**, and to use these clusters to make recommendations.
+
+## **Steps in Unsupervised Learning**
+
+1. **Feature Extraction with ResNet50**
+
+   Used **ResNet50**, a deep convolutional neural network pre-trained on ImageNet, for feature extraction.
+
+   - Images were resized and preprocessed.
+   - Extracted high-dimensional deep features from the 'avg_pool' layer.
+   - Flattened features into 2048-length vectors per image.
+
+2. **Dimensionality Reduction with PCA**
+
+   - Applied **Principal Component Analysis (PCA)** to reduce feature vector dimensions from 2048 to 100.
+   - Helped improve clustering performance and visualization.
+   - Maintained variance while simplifying the feature space.
+
+3. **Clustering with K-Means**
+
+   - Implemented **K-Means Clustering** on the reduced feature set.
+   - Selected an optimal number of clusters (**K=7**) based on visual inspection and experimentation.
+   - Each image was assigned a cluster label representing visually similar groups.
+
+4. **Cluster Visualization**
+
+   - Displayed sample images from each cluster to validate visual similarity.
+   - Used scatter plots of PCA components with color-coded cluster labels for analysis.
+
+5. **Fashion Product Recommendation**
+
+   - For a selected image, retrieved visually similar products from the **same cluster**.
+   - Recommendations were based on proximity in PCA-reduced feature space.
+   - Achieved visually coherent and relevant suggestions without relying on predefined labels.
 
 
 ## References
