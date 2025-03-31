@@ -139,7 +139,7 @@ To group fashion products based on visual similarity **without using labeled dat
 3. **Clustering with K-Means**
 
    - Implemented **K-Means Clustering** on the reduced feature set.
-   - Selected an optimal number of clusters (**K=7**) based on visual inspection and experimentation.
+   - Selected an optimal number of clusters (**K=4**) based on visual inspection and experimentation.
    - Each image was assigned a cluster label representing visually similar groups.
 
 4. **Cluster Visualization**
